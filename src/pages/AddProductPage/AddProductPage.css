@@ -1,0 +1,79 @@
+.add-product-wrapper {
+  padding: 40px;
+}
+
+.product-form {
+  background: white;
+  padding: 40px;
+  border-radius: 16px;
+  max-width: 650px;
+}
+
+
+.upload-box {
+  height: 180px;
+  border: 2px dashed #ddd;
+  border-radius: 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin-bottom: 25px;
+  transition: 0.2s ease;
+}
+
+.upload-box:hover {
+  border-color: #aaa;
+}
+
+.upload-box p {
+  font-weight: 600;
+}
+
+.upload-box span {
+  font-size: 13px;
+  color: gray;
+}
+
+.preview-image {
+  max-height: 160px;
+  border-radius: 12px;
+}
+
+.input-field {
+  width: 100%;
+  padding: 14px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  margin-bottom: 15px;
+}
+
+.store-row {
+  display: flex;
+  gap: 10px;
+}
+
+.secondary-btn {
+  margin-bottom: 20px;
+  background: transparent;
+  border: none;
+  color: #333;
+  cursor: pointer;
+  background-color: #111;
+  color: #fff;
+  padding: 1rem;
+  border-radius: 2rem;
+  cursor: pointer;
+}
+
+.submit-btn {
+  width: 220px;
+  padding: 14px;
+  background: black;
+  color: white;
+  border-radius: 30px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}

@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>dealwiser</title>
+    <style>
+      @font-face {
+        font-family: japan;
+        src: url('./src/Fonts/3856NeueMachina.woff2');
+      }
+      html {
+    font-size: 65.5%;
+    font-family: japan;
+  }
+
+:root {
+
+    /* ================= COLORS ================= */
+
+  --color-bg-main: #F5F5F5;
+  --color-card: #FFFFFF;
+
+  --color-text-primary: #111111;
+  --color-text-secondary: #7A7A7A;
+
+  --color-accent-primary: #B8F36B;
+  --color-accent-dark: #4C6B2A;
+  --color-accent-deep: #2F4F1E;
+
+  --color-button-primary: #000000;
+  --color-border-light: #E5E5E5;
+  /* ================= FONT FAMILY ================= */
+
+  --font-primary:
+    "Inter",
+    system-ui,
+    -apple-system,
+    "Segoe UI",
+    Roboto,
+    Helvetica,
+    Arial,
+    sans-serif;
+
+
+  /* ================= FONT SIZE SCALE ================= */
+
+  --fs-xs: 1.1rem;   /* 11.5px */
+  --fs-sm: 1.3rem;   /* 13.6px */
+  --fs-md: 1.5rem;   /* 15.7px */
+  --fs-lg: 1.8rem;   /* 18.8px */
+  --fs-xl: 2.4rem;   /* 25px */
+  --fs-2xl: 3.2rem;  /* 33px */
+  --fs-3xl: 4.8rem;  /* 50px hero */
+
+
+  /* ================= FONT WEIGHT ================= */
+
+  --fw-light: 300;
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+
+
+  /* ================= LETTER SPACING ================= */
+
+  --ls-tight: -0.02rem;
+  --ls-normal: 0rem;
+  --ls-wide: 0.05rem;
+  --ls-wider: 0.12rem;
+  --ls-heading: -0.04rem;
+
+
+  /* ================= LINE HEIGHT ================= */
+
+  --lh-tight: 1.2;
+  --lh-normal: 1.5;
+  --lh-relaxed: 1.7;
+
+
+  /* ================= HEADING SYSTEM ================= */
+
+  --heading-hero-size: var(--fs-3xl);
+  --heading-hero-weight: var(--fw-bold);
+  --heading-hero-spacing: var(--ls-heading);
+
+  --heading-primary-size: var(--fs-2xl);
+  --heading-primary-weight: var(--fw-semibold);
+
+  --heading-secondary-size: var(--fs-xl);
+  --heading-secondary-weight: var(--fw-medium);
+
+
+  /* ================= BODY TEXT ================= */
+
+  --text-body-size: var(--fs-md);
+  --text-body-weight: var(--fw-regular);
+
+  --text-muted-size: var(--fs-sm);
+  --text-muted-weight: var(--fw-regular);
+
+
+  /* ================= INPUT TEXT ================= */
+
+  --input-font-size: var(--fs-md);
+  --input-font-weight: var(--fw-medium);
+
+
+  /* ================= BUTTON TEXT ================= */
+
+  --btn-font-size: var(--fs-md);
+  --btn-font-weight: var(--fw-medium);
+  --btn-letter-spacing: var(--ls-wide);
+
+
+  /* ================= NAVBAR TEXT ================= */
+
+  --nav-font-size: var(--fs-sm);
+  --nav-font-weight: var(--fw-medium);
+
+
+  /* ================= SMALL LABEL TEXT ================= */
+
+  --label-font-size: var(--fs-xs);
+  --label-font-weight: var(--fw-medium);
+  --label-letter-spacing: var(--ls-wider);
+    /* ================= LOGIN CARD ================= */
+
+  --card-width: 38rem;
+  --card-padding: 3.2rem;
+  --card-radius: var(--radius-lg);
+
+
+  /* ================= NAVBAR ================= */
+
+  --nav-height: 6.4rem;
+  --nav-padding-x: 3.2rem;
+
+
+  /* ================= TRANSITIONS ================= */
+
+  --transition-fast: 0.18s ease;
+  --transition-normal: 0.28s ease;
+  --transition-slow: 0.4s ease;
+   /* ================= SHADOWS ================= */
+
+  --shadow-soft:
+    0 0.6rem 1.6rem rgba(0,0,0,0.08);
+
+  --shadow-card:
+    0 1rem 3rem rgba(0,0,0,0.12);
+
+  --shadow-hover:
+    0 1.6rem 4rem rgba(0,0,0,0.18);
+
+  /* ================= BORDER RADIUS ================= */
+
+  --radius-sm: 0.6rem;
+  --radius-md: 1.2rem;
+  --radius-lg: 2rem;
+  --radius-xl: 2.8rem;
+
+}
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

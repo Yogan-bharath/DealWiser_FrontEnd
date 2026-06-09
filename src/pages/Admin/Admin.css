@@ -1,0 +1,13 @@
+.admin-layout {
+  display: flex;
+  /* justify-content: space-between; */
+  height: 100vh;
+  background: #f7f7f7;
+  /* border: 1px solid black; */
+}
+
+.admin-content {
+    /* border: 1px solid black; */
+    flex: 1;
+    padding: 40px;
+}

@@ -1,0 +1,104 @@
+/* SIDEBAR BASE */
+
+.sidebar {
+  width: 15rem;
+  height: calc(100vh - 70px);
+  background: white;
+  border-right: 1px solid #eee;
+  padding: 25px;
+  position: relative;
+  transition: 0.3s ease;
+}
+
+.menu-toggle{
+    height: fit-content;
+    /* padding: .1rem; */
+    /* margin-left: 10px; */
+}
+
+
+/* LOGO */
+
+.logo-admin {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 30px;
+  color: #444;
+}
+
+
+/* NAV LINKS */
+
+.nav-item {
+  display: block;
+  padding: 12px 15px;
+  border-radius: 10px;
+  margin-bottom: 8px;
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+  transition: 0.2s ease;
+}
+
+.nav-item:hover {
+  background: #f4f5f7;
+}
+
+.nav-item.active {
+  background: #eef0f3;
+  font-weight: 600;
+}
+
+
+/* MOBILE TOGGLE BUTTON */
+
+.sidebar-toggle {
+  display: none;
+  position: fixed;
+  top: 90px; /* BELOW NAVBAR */
+  left: 20px;
+  background: black;
+  color: white;
+  border: none;
+  font-size: 20px;
+  padding: 8px 12px;
+  border-radius: 6px;
+  z-index: 1200;
+}
+
+
+/* OVERLAY */
+
+.sidebar-overlay {
+  position: fixed;
+  top: 70px; /* BELOW NAVBAR */
+  left: 0;
+  width: 100%;
+  height: calc(100vh - 70px);
+  background: rgba(0,0,0,0.25);
+  z-index: 900;
+}
+
+
+/* MOBILE MODE */
+
+@media (max-width: 900px) {
+
+
+  .sidebar-toggle {
+    display: block;
+  }
+
+  .sidebar {
+    position: fixed;
+    left: -260px;
+    top: 70px; /* BELOW NAVBAR */
+    height: calc(100vh - 70px);
+    z-index: 1000;
+  }
+
+  .sidebar.active {
+    left: 0;
+  }
+
+}

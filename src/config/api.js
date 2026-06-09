@@ -1,0 +1,1 @@
+export const API = "https://dealwiser-backend.onrender.com/api";

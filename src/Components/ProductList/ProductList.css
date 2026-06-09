@@ -1,0 +1,222 @@
+.product-section{
+    max-width: 1300px;
+    margin: 4rem auto;
+    padding: 0 20px;
+}
+
+/* SECTION TITLE */
+
+.section-title{
+    font-size: var(--heading-primary-size);
+    font-weight: var(--heading-primary-weight);
+    margin-bottom: 2rem;
+}
+
+
+/* GRID */
+
+.product-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.4rem;
+}
+
+
+/* CARD */
+
+.product-card{
+    background: var(--color-card);
+
+    border-radius: var(--radius-xl);
+
+    padding: 2rem;
+
+    box-shadow: var(--shadow-soft);
+
+    transition: var(--transition-normal);
+
+    display: flex;
+    flex-direction: column;
+}
+
+.product-card:hover{
+    transform: translateY(-6px);
+    box-shadow: var(--shadow-hover);
+}
+
+
+/* IMAGE */
+
+.product-image-wrapper{
+    position: relative;
+
+    border-radius: var(--radius-lg);
+
+    overflow: hidden;
+
+    height: 220px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #f8f9fb;
+}
+
+.product-image-wrapper img{
+    max-width: 100%;
+    max-height: 100%;
+
+    object-fit: contain;
+
+    transition: transform .3s ease;
+}
+
+.product-card:hover .product-image-wrapper img{
+    transform: scale(1.05);
+}
+
+
+/* HEART BUTTON */
+
+.wishlist-btn{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+
+    width: 34px;
+    height: 34px;
+
+    background: white;
+
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+
+    box-shadow: 0 2px 8px rgba(0,0,0,.08);
+}
+
+
+/* TITLE */
+
+.product-title{
+    font-size: var(--fs-lg);
+    font-weight: var(--fw-semibold);
+
+    margin: 1.4rem 0;
+}
+
+
+/* STORE LIST */
+
+.price-list{
+    display: flex;
+    flex-direction: column;
+    gap: .6rem;
+}
+
+.store-row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    font-size: var(--fs-md);
+}
+
+
+/* BEST DEAL */
+
+.best-price{
+    color: var(--color-accent-deep);
+    font-weight: var(--fw-semibold);
+}
+
+.best-deal-tag{
+    font-size: var(--label-font-size);
+
+    background: var(--color-accent-primary);
+
+    padding: .2rem .8rem;
+
+    border-radius: 12px;
+
+    margin-left: .6rem;
+}
+
+
+/* GO TO BUTTON */
+
+.go-to-btn{
+    margin-top: 1.6rem;
+
+    width: 100%;
+
+    padding: 1.2rem;
+
+    border: none;
+
+    border-radius: 40px;
+
+    background: var(--color-button-primary);
+
+    color: var(--color-card);
+
+    font-size: var(--btn-font-size);
+
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+
+    cursor: pointer;
+
+    transition: var(--transition-fast);
+    text-decoration: none;
+}
+
+/* .go-to-btn:hover{
+    transform: translateY(-2px);
+} */
+
+
+/* =========================
+   RESPONSIVE DESIGN
+   ========================= */
+
+
+/* TABLET */
+
+@media (max-width: 1024px){
+
+    .product-grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/* MOBILE */
+
+@media (max-width: 600px){
+
+    .product-section{
+        margin: 2rem auto;
+    }
+
+    .product-grid{
+        grid-template-columns: 1fr;
+        gap: 1.8rem;
+    }
+
+    .product-card{
+        padding: 1.6rem;
+    }
+
+    .product-image-wrapper{
+        height: 180px;
+    }
+
+}
