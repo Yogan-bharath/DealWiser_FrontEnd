@@ -1,93 +1,100 @@
-.Login-section{
+.Login-section {
     display: flex;
     margin-top: 4em;
-    .left-Login-section{
-        max-width: 52vw;
-        padding: 5.3em;
-        display: flex;
-        flex-direction: column;
-        gap: 2em;
-        p{
-            font-size: .8em;
-            font-weight: 700;
-            letter-spacing: 1px;
-        }
-        h1{
-            font-size: 4.5em;
-            font-weight: 900;
-            line-height: 1em;
-            span{
-                background-color: var(--color-accent-primary);
-            }
-        }
-        .hook-line{
-            border:none;
-            max-width: 26em;
-            padding: 1.5em;
-            box-shadow: var(--shadow-card);
-            border-radius: 2.2em;
-            font-weight: 500;
-        }
-    }
 }
 
-.right-login-section{
-    /* max-width: 50em; */
-    /* border: 1px solid black; */
-    background:
-    url("https://plus.unsplash.com/premium_vector-1727184847317-c257d301d43c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fG9ubGluZSUyMHNob3BwaW5nfGVufDB8fDB8fHww");
-  background-size: cover;
-  background-position: center;
+.Login-section .left-Login-section {
+    max-width: 52vw;
+    padding: 5.3em;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.Login-section .left-Login-section p {
+    font-size: 0.8em;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.Login-section .left-Login-section h1 {
+    font-size: 4.5em;
+    font-weight: 900;
+    line-height: 1em;
+}
+
+.Login-section .left-Login-section h1 span {
+    background-color: var(--color-accent-primary);
+}
+
+.Login-section .left-Login-section .hook-line {
+    border: none;
+    max-width: 26em;
+    padding: 1.5em;
+    box-shadow: var(--shadow-card);
+    border-radius: 2.2em;
+    font-weight: 500;
+}
+
+.right-login-section {
+    background: url("https://plus.unsplash.com/premium_vector-1727184847317-c257d301d43c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fG9ubGluZSUyMHNob3BwaW5nfGVufDB8fDB8fHww");
+    background-size: cover;
+    background-position: center;
     height: 95vh;
     width: 100%;
-    .login-section{
-        background-color: var(--color-card);
-        display: flex;
-        flex-direction: column;
-        border-radius: 3em;
-        gap: 2em;
-        padding: 3em;
-        max-width: 30em;
-        margin: 8em auto;
-        .click-me:hover{
-            cursor: pointer;
-            span{
-                background-color: var(--color-accent-primary);
-            }
-        }
-        .click-me{
-            span{
-                margin-left: .8em;
-                padding: .2em;
-            }
-        }
-        form{ 
-            display: flex;
-            flex-direction: column;
-            gap: .9em;
-            label{
-                font-size: 1em;
-                font-weight: 700;
-                letter-spacing: 1.5px;
-            }
-            input{
-                padding: .8em 1.2em;
-                /* border: none; */
-                font-size: 1em;
-                background-color: var();
+}
 
-            }
-            .login-btn{
-                padding: 1em 1.2em;
-                font-size: 1.1em;
-                border-radius: 2em;
-                border: none;
-                background-color: #111;
-                color: var(--color-card);
-            }
-            .login-btn:hover{
-                cursor: pointer;
-            }
-        }
-    }
+.right-login-section .login-section {
+    background-color: var(--color-card);
+    display: flex;
+    flex-direction: column;
+    border-radius: 3em;
+    gap: 2em;
+    padding: 3em;
+    max-width: 30em;
+    margin: 8em auto;
+}
+
+.right-login-section .login-section .click-me:hover {
+    cursor: pointer;
+}
+
+.right-login-section .login-section .click-me:hover span {
+    background-color: var(--color-accent-primary);
+}
+
+.right-login-section .login-section .click-me span {
+    margin-left: 0.8em;
+    padding: 0.2em;
+}
+
+.right-login-section .login-section form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.9em;
+}
+
+.right-login-section .login-section form label {
+    font-size: 1em;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+.right-login-section .login-section form input {
+    padding: 0.8em 1.2em;
+    font-size: 1em;
+    background-color: var(--color-card);
+}
+
+.right-login-section .login-section form .login-btn {
+    padding: 1em 1.2em;
+    font-size: 1.1em;
+    border-radius: 2em;
+    border: none;
+    background-color: #111;
+    color: var(--color-card);
+}
+
+.right-login-section .login-section form .login-btn:hover {
+    cursor: pointer;
 }

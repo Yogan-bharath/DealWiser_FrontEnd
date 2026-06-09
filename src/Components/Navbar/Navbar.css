@@ -1,91 +1,91 @@
 .navbar {
-    border: 1px solid rgba(0, 0, 0, 0.05);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
-    padding: 1em 2em;
-    margin: 1em auto;
+  padding: 1em 2em;
+  margin: 1em auto;
 
-    border-radius: 2em;
-    max-width: 70em;
+  border-radius: 2em;
+  max-width: 70em;
 
-    background-color: #ffffff37;
-    backdrop-filter: blur(60px);
+  background-color: #ffffff37;
+  backdrop-filter: blur(60px);
 
-    /* position: fixed; */
-    /* top: 0;
+  /* position: fixed; */
+  /* top: 0;
     left: 0;
     right: 0; */
-    z-index: 10000;
-    box-shadow: var(--shadow-soft);
+  z-index: 10000;
+  box-shadow: var(--shadow-soft);
 }
 
 .logo {
-    font-size: var(--fs-xl);
-    font-weight: var(--fw-semibold);
+  font-size: var(--fs-xl);
+  font-weight: var(--fw-semibold);
 }
 
 /* center links */
 .navigate {
-    display: flex;
-    gap: 3em;
+  display: flex;
+  gap: 3em;
 }
 
 .navigate a {
-    font-size: var(--fs-lg);
-    text-decoration: none;
-    color: var(--color-text-primary);
-    transition: 0.2s ease;
+  font-size: var(--fs-lg);
+  text-decoration: none;
+  color: var(--color-text-primary);
+  transition: 0.2s ease;
 }
 
 .navigate a:hover {
-    color: var(--color-accent-primary);
+  color: var(--color-accent-primary);
 }
 
 /* right side buttons */
 .nav-actions {
-    display: flex;
-    gap: 1em;
+  display: flex;
+  gap: 1em;
 }
 
 /* cart button */
 .cart-btn {
-    padding: 0.6em 1.4em;
-    border-radius: 2em;
-    background: rgba(0,0,0,0.05);
-    text-decoration: none;
-    font-size: var(--fs-md);
-    color: var(--color-text-primary);
-    transition: 0.2s ease;
+  padding: 0.6em 1.4em;
+  border-radius: 2em;
+  background: rgba(0, 0, 0, 0.05);
+  text-decoration: none;
+  font-size: var(--fs-md);
+  color: var(--color-text-primary);
+  transition: 0.2s ease;
 }
 
 .cart-btn:hover {
-    background: rgba(0,0,0,0.1);
+  background: rgba(0, 0, 0, 0.1);
 }
 
 /* login button */
 .login-btn {
-    padding: 0.7em 1.6em;
-    border-radius: 2em;
-    border: none;
-    background-color: var(--color-button-primary);
-    color: white;
-    font-weight: var(--fw-semibold);
-    cursor: pointer;
+  padding: 0.7em 1.6em;
+  border-radius: 2em;
+  border: none;
+  background-color: var(--color-button-primary);
+  color: white;
+  font-weight: var(--fw-semibold);
+  cursor: pointer;
 }
 
 /* logout button */
 .logout-btn-red {
-    padding: 0.7em 1.6em;
-    border-radius: 2em;
-    border: none;
-    background-color: #ff4d4d;
-    color: white;
-    font-weight: var(--fw-semibold);
-    cursor: pointer;
+  padding: 0.7em 1.6em;
+  border-radius: 2em;
+  border: none;
+  background-color: #ff4d4d;
+  color: white;
+  font-weight: var(--fw-semibold);
+  cursor: pointer;
 }
 
 .logout-btn:hover {
-    background-color: #e63939;
+  background-color: #e63939;
 }
